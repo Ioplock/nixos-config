@@ -21,7 +21,9 @@
 		libNP = nixpkgs.lib;
 		libHM = home-manager.lib;
 		system = "x86_64-linux";
-    homeStateVersion = "25.05";
+    version = "25.05";
+    stateVersion = version;
+    homeStateVersion = version;
     user = "ioplock";
 		pkgs = nixpkgs.legacyPackages.${system};
 	in {
