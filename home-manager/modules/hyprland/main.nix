@@ -15,7 +15,7 @@
 
       monitor = ",1920x1080@60,auto,1";
       "$mainMod" = "SUPER";
-      "$terminal" = "ghostty";
+      "$terminal" = "ghostty --gtk-single-instance=true";
       # "$fileManager" = "$terminal -e sh -c 'ranger'";
       "$menu" = "wofi";
 
