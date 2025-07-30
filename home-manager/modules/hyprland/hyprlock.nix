@@ -25,6 +25,14 @@
         };
       };
 
+      background = [
+        {
+          path = "screenshot";
+          blur_passes = 2;
+          blur_size = 8;
+        }
+      ];
+
       animations = {
         enabled = true;
       };

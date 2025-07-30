@@ -24,7 +24,6 @@
       wofi.enable = false;
       hyprland.enable = false;
       hyprlock.enable = false;
-      hyprlock.useWallpaper = true;
     };
 
     cursor = {
