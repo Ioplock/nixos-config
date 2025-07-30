@@ -6,7 +6,7 @@
       mainBar = {
         layer = "top";
         position = "top";
-        height = 36;
+        height = 30;
         modules-left = ["hyprland/workspaces" "hyprland/window"];
         modules-center = ["clock"];
         modules-right = ["hyprland/language" "pulseaudio" "battery" "tray"];
