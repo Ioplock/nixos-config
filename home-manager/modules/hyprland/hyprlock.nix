@@ -50,7 +50,7 @@
           inner_color = "rgba(40, 40, 40, 1.0)";
           font_color = "rgba(235, 219, 178, 1.0)";
           fade_on_empty = false;
-          placeholder_text = '\'<span foreground="##cad3f5">Password...</span>'\';
+          placeholder_text = "<i><span foreground=\"##cdd6f4\">Input Password…</span></i>";
           hide_input = false;
           check_color = "rgba(235, 219, 178, 1.0)";
           fail_color = "rgba(204, 34, 34, 1.0)";
