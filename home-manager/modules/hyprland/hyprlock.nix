@@ -31,10 +31,8 @@
 
       background = [
         {
-          path = "screenshot";
-          blur_passes = 2;
-          blur_size = 8;
-          background_color = "rgba(0, 0, 0, 0.5)";
+          blur_passes = 1;
+          blur_size = 4;
         }
       ];
 
