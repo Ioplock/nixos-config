@@ -6,7 +6,7 @@
       "$mainMod SHIFT, Q, exit,"
       # "$mainMod,       R, exec, $fileManager"
       "$mainMod,       F, togglefloating,"
-      # "$mainMod,       D, exec, $menu --show drun"
+      "$mainMod,       D, exec, $menu --show drun"
       "$mainMod,       P, pin,"
       # "$mainMod,       J, togglesplit,"
       # "$mainMod,       E, exec, bemoji -cn"
