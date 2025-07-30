@@ -9,29 +9,26 @@
         height = 30;
         modules-left = ["hyprland/workspaces" "hyprland/window"];
         modules-center = ["clock"];
-        modules-right = ["hyprland/language" "pulseaudio" "battery" "tray"];
+        modules-right = ["network" "hyprland/language" "pulseaudio" "battery" "tray"];
         "hyprland/workspaces" = {
           disable-scroll = true;
           show-special = true;
           special-visible-only = true;
           all-outputs = false;
-          format = "{icon}";
-          format-icons = {
-            "1" = "";
-            "2" = "";
-            "3" = "";
-            "4" = "";
-            "5" = "";
-            "6" = "";
-            "7" = "";
-            "8" = "";
-            "9" = "";
-            "magic" = "";
-          };
+          format = "{name}";
 
           persistent-workspaces = {
             "*" = 9;
           };
+        };
+
+        "network" = {
+          format-wifi = "  {signalStrength}%";
+          format-ethernet = " {ifname}";
+          format-disconnected = "⚠ Disconnected";
+          tooltip-format-wifi = "Connected to {essid}";
+          tooltip-format-ethernet = "Connected via ethernet";
+          on-click = "nm-connection-editor";
         };
 
         "hyprland/language" = {
@@ -43,16 +40,16 @@
 
         "pulseaudio" = {
           format = "{icon} {volume}%";
-          format-bluetooth = "{icon} {volume}% ";
-          format-muted = "";
+          format-bluetooth = "{icon} {volume}% ";
+          format-muted = "";
           format-icons = {
-            "headphones" = "";
-            "handsfree" = "";
-            "headset" = "";
-            "phone" = "";
-            "portable" = "";
-            "car" = "";
-            "default" = ["" ""];
+            "headphones" = "";
+            "handsfree" = "";
+            "headset" = "";
+            "phone" = "";
+            "portable" = "";
+            "car" = "";
+            "default" = ["" ""];
           };
           on-click = "pavucontrol";
         };
@@ -63,9 +60,9 @@
             critical = 1;
           };
           format = "{icon} {capacity}%";
-          format-charging = " {capacity}%";
+          format-charging = " {capacity}%";
           format-alt = "{time} {icon}";
-          format-icons = ["" "" "" "" ""];
+          format-icons = ["" "" "" "" ""];
         };
 
         "clock" = {

@@ -109,6 +109,20 @@ window#waybar {
   font-weight: 600;
 }
 
+/* Network module */
+#network {
+  background: rgba(148, 226, 213, 0.2);
+  color: #94e2d5;
+  border-radius: 6px;
+  padding: 2px 8px;
+  margin: 3px 2px;
+}
+
+#network.disconnected {
+  background: rgba(243, 139, 168, 0.2);
+  color: #f38ba8;
+}
+
 /* Tray module */
 #tray {
   background: rgba(245, 194, 231, 0.2);
