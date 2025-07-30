@@ -23,9 +23,9 @@
         };
 
         "network" = {
-          format-wifi = "󰤨 {signalStrength}%";
-          format-ethernet = "󰈀 {ifname}";
-          format-disconnected = "󰤭 Disconnected";
+          format-wifi = " {signalStrength}%";
+          format-ethernet = " {ifname}";
+          format-disconnected = " Disconnected";
           tooltip-format-wifi = "Connected to {essid}";
           tooltip-format-ethernet = "Connected via ethernet";
           on-click = "nm-connection-editor";
@@ -41,15 +41,15 @@
         "pulseaudio" = {
           format = "{icon} {volume}%";
           format-bluetooth = "{icon} {volume}% ";
-          format-muted = "";
+          format-muted = "";
           format-icons = {
-            "headphones" = "";
-            "handsfree" = "";
-            "headset" = "";
-            "phone" = "";
-            "portable" = "";
-            "car" = "";
-            "default" = ["" ""];
+            "headphones" = "";
+            "handsfree" = "";
+            "headset" = "";
+            "phone" = "";
+            "portable" = "";
+            "car" = "";
+            "default" = ["" ""];
           };
           on-click = "pavucontrol";
         };
@@ -60,9 +60,9 @@
             critical = 1;
           };
           format = "{icon} {capacity}%";
-          format-charging = " {capacity}%";
+          format-charging = " {capacity}%";
           format-alt = "{time} {icon}";
-          format-icons = ["󰂎" "󰁺" "󰁻" "󰁼" "󰁽"];
+          format-icons = ["" "" "" "" ""];
         };
 
         "clock" = {
