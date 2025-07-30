@@ -23,9 +23,9 @@
         };
 
         "network" = {
-          format-wifi = "  {signalStrength}%";
-          format-ethernet = " {ifname}";
-          format-disconnected = "⚠ Disconnected";
+          format-wifi = "󰤨 {signalStrength}%";
+          format-ethernet = "󰈀 {ifname}";
+          format-disconnected = "󰤭 Disconnected";
           tooltip-format-wifi = "Connected to {essid}";
           tooltip-format-ethernet = "Connected via ethernet";
           on-click = "nm-connection-editor";
@@ -62,7 +62,7 @@
           format = "{icon} {capacity}%";
           format-charging = " {capacity}%";
           format-alt = "{time} {icon}";
-          format-icons = ["" "" "" "" ""];
+          format-icons = ["󰂎" "󰁺" "󰁻" "󰁼" "󰁽"];
         };
 
         "clock" = {
