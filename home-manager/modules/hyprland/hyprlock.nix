@@ -40,7 +40,7 @@
       input-field = [
         {
           monitor = "";
-          size = "400, 90";
+          size = "300, 50";
           outline_thickness = 4;
           dots_size = 0.25;
           dots_spacing = 0.15;
@@ -49,12 +49,12 @@
           outer_color = "rgba(17, 17, 17, 1.0)";
           inner_color = "rgba(200, 200, 200, 1.0)";
           font_color = "rgba(10, 10, 10, 1.0)";
-          font_family = "Noto Sans";
+          font_family = "JetBrains Mono";
           fade_on_empty = true;
           fade_timeout = 2000;
           placeholder_text = "<i>Input Password...</i>";
           hide_input = false;
-          hide_input_base_color = "rgba(153, 170, 187)";
+          hide_input_base_color = "rgba(153, 170, 187, 1.0)";
           rounding = -1;
           check_color = "rgba(204, 136, 34, 1.0)";
           fail_color = "rgba(204, 34, 34, 1.0)";
