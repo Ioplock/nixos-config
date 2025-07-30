@@ -47,6 +47,7 @@
           dots_center = true;
           outer_color = "rgba(235, 219, 178, 1.0)";
           inner_color = "rgba(40, 40, 40, 1.0)";
+          font_family = "JetBrains Mono";
           font_color = "rgba(235, 219, 178, 1.0)";
           fade_on_empty = false;
           placeholder_text = "<span><i>󰌾 Logged in as </i><span>$USER</span></span>";

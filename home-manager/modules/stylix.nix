@@ -3,7 +3,6 @@
 
   home.packages = with pkgs; [
     dejavu_fonts
-    jetbrains-mono
     noto-fonts
     noto-fonts-lgc-plus
     texlivePackages.hebrew-fonts
@@ -11,6 +10,7 @@
     font-awesome
     powerline-fonts
     powerline-symbols
+    nerd-fonts.jetbrains-mono
   ];
 
   stylix = {
@@ -39,15 +39,7 @@
       };
       monospace = {
         name = "JetBrains Mono";
-        package = pkgs.jetbrains-mono;
-      };
-      sansSerif = {
-        name = "Noto Sans";
-        package = pkgs.noto-fonts;
-      };
-      serif = {
-        name = "Noto Serif";
-        package = pkgs.noto-fonts;
+        package = pkgs.nerdfonts.jetbrains-mono;
       };
 
       sizes = {
@@ -63,9 +55,6 @@
       light = "Papirus-Light";
     };
 
-    image = pkgs.fetchurl {
-      url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-rainbow.png";
-      sha256 = "036gqhbf6s5ddgvfbgn6iqbzgizssyf7820m5815b2gd748jw8zc";
-    };
+    image = ../../assets/catpuccin-nixos-background.jpg;
   };
 }
