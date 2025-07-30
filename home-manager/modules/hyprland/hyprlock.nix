@@ -70,14 +70,22 @@
         {
           monitor = "";
           text = "$TIME";
-          text_align = "center";
           color = "rgba(235, 219, 178, 1.0)";
-          font_size = 96;
+          font_size = 90;
           font_family = "JetBrains Mono";
-          rotate = 0;
-          position = "0, 600";
-          halign = "center";
-          valign = "center";
+          position = "-30, 0";
+          halign = "right";
+          valign = "top";
+        }
+        {
+          monitor = "";
+          text = "cmd[update:43200000] date +\"%A, %d %B %Y\"";
+          color = "rgba(235, 219, 178, 1.0)";
+          font_size = 25;
+          font_family = "JetBrains Mono";
+          position = "-30, -150";
+          halign = "right";
+          valign = "top";
         }
       ];
     };
