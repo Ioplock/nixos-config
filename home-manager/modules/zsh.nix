@@ -10,6 +10,8 @@
       if uwsm check may-start > /dev/null; then
         exec systemd-cat -t uwsm_start uwsm start default
       fi
+
+			hyprlock
     '';
 	};
 }
