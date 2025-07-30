@@ -57,7 +57,8 @@ in {
           check_color = "rgb(${base05})";
           fail_color = "rgb(${base08})";
           fail_text = "<i>$FAIL <b>($ATTEMPTS)</b></i>";
-          capslock_color = "rgb(${base09}) rgb(${base09}) 45deg";
+          capslock_color = "rgb(${base09})";
+          swap_font_color = true;
           position = "0, -47";
           halign = "center";
           valign = "center";
