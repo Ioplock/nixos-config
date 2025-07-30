@@ -20,12 +20,12 @@
       "$menu" = "wofi";
 
       exec-once = [
+        "waybar"
         "hyprlock"
         "ghostty --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"
       ];
 
       # exec-once = [
-      #   "waybar"
       #   "wl-paste --type text --watch cliphist store"
       #   "wl-paste --type image --watch cliphist store"
       # ];
