@@ -1,5 +1,5 @@
 { pkgs, inputs, ... }: {
-  imports = [ inputs.stylix.homeManagerModules.stylix ];
+  imports = [ inputs.stylix.homeModules.stylix ];
 
   home.packages = with pkgs; [
     dejavu_fonts
@@ -23,7 +23,7 @@
       waybar.enable = false;
       wofi.enable = false;
       hyprland.enable = false;
-      hyprlock.enable = false;
+      hyprlock.enable = true;
     };
 
     cursor = {
