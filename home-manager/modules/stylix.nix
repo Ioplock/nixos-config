@@ -2,15 +2,9 @@
   imports = [ inputs.stylix.homeModules.stylix ];
 
   home.packages = with pkgs; [
-    dejavu_fonts
-    noto-fonts
-    noto-fonts-lgc-plus
-    texlivePackages.hebrew-fonts
-    noto-fonts-emoji
-    font-awesome
-    powerline-fonts
-    powerline-symbols
+    # Fonts needed by stylix configuration
     nerd-fonts.jetbrains-mono
+    noto-fonts-color-emoji
   ];
 
   stylix = {
@@ -39,7 +33,7 @@
       };
       monospace = {
         name = "JetBrains Mono";
-        package = pkgs.nerdfonts.jetbrains-mono;
+        package = pkgs.nerd-fonts.jetbrains-mono;
       };
 
       sizes = {
