@@ -40,29 +40,24 @@
       input-field = [
         {
           monitor = "";
-          size = "300, 50";
+          size = "300, 60";
           outline_thickness = 4;
-          dots_size = 0.25;
-          dots_spacing = 0.15;
+          dots_size = 0.2;
+          dots_spacing = 0.2;
           dots_center = true;
-          dots_rounding = -1;
-          outer_color = "rgba(17, 17, 17, 1.0)";
-          inner_color = "rgba(200, 200, 200, 1.0)";
-          font_color = "rgba(10, 10, 10, 1.0)";
-          font_family = "JetBrains Mono";
-          fade_on_empty = true;
-          fade_timeout = 2000;
-          placeholder_text = "<i>Input Password...</i>";
+          outer_color = "rgba(235, 219, 178, 1.0)";
+          inner_color = "rgba(40, 40, 40, 1.0)";
+          font_color = "rgba(235, 219, 178, 1.0)";
+          fade_on_empty = false;
+          placeholder_text = "<span foreground=\"#808080\"><i>󰌾 Logged in as </i><span foreground=\"#ebdbb2\">$USER</span></span>";
           hide_input = false;
-          hide_input_base_color = "rgba(153, 170, 187, 1.0)";
-          rounding = -1;
-          check_color = "rgba(204, 136, 34, 1.0)";
+          check_color = "rgba(235, 219, 178, 1.0)";
           fail_color = "rgba(204, 34, 34, 1.0)";
           fail_text = "<i>$FAIL <b>($ATTEMPTS)</b></i>";
-          position = "0, 0";
+          capslock_color = "rgba(250, 189, 47, 1.0)";
+          position = "0, -47";
           halign = "center";
           valign = "center";
-          zindex = 0;
         }
       ];
 
