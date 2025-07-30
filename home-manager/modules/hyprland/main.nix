@@ -60,11 +60,11 @@
       };
 
       animations = {
-        enabled = true;
+        enabled = false;
       };
 
       input = {
-        kb_layout = "us,ru,il";
+        kb_layout = "us,ru";
         kb_options = "grp:caps_toggle";
       };
 

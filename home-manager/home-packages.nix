@@ -2,9 +2,19 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
-    neofetch
+    microfetch
+    ffmpeg
     htop
     inxi
+
+    # WM stuff
+    libsForQt5.xwaylandvideobridge
+    libnotify
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
+
+    # Other
+    bemoji
   ];
 
 }
