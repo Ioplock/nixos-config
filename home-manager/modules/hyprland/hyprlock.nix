@@ -29,13 +29,6 @@
         enabled = true;
       };
 
-      background = [
-        {
-          blur_passes = 1;
-          blur_size = 4;
-        }
-      ];
-
       input-field = [
         {
           monitor = "";
