@@ -4,7 +4,7 @@
     settings = {
       general = {
         hide_cursor = true;
-        ignore_empty_input = false;
+        ignore_empty_input = true;
         immediate_render = false;
         text_trim = true;
         fractional_scaling = 2;
@@ -32,8 +32,9 @@
       background = [
         {
           path = "screenshot";
-          blur_passes = 3;
+          blur_passes = 1;
           blur_size = 8;
+          color = "rgba(0, 0, 0, 0.5)";
         }
       ];
 
