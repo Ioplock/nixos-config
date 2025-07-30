@@ -47,17 +47,17 @@ in {
           dots_size = 0.2;
           dots_spacing = 0.2;
           dots_center = true;
-          outer_color = "rgb(#${base05})";
-          inner_color = "rgb(#${base00})";
+          outer_color = "rgb(${base05})";
+          inner_color = "rgb(${base00})";
           font_family = "JetBrains Mono";
-          font_color = "rgb(#${base05})";
+          font_color = "rgb(${base05})";
           fade_on_empty = false;
           placeholder_text = "<span><i>Logged in as </i><span>$USER</span></span>";
           hide_input = false;
-          check_color = "rgb(#${base05})";
-          fail_color = "rgb(#${base08})";
+          check_color = "rgb(${base05})";
+          fail_color = "rgb(${base08})";
           fail_text = "<i>$FAIL <b>($ATTEMPTS)</b></i>";
-          capslock_color = "rgb(#${base09})";
+          capslock_color = "rgb(${base09})";
           position = "0, -47";
           halign = "center";
           valign = "center";
@@ -68,7 +68,7 @@ in {
         {
           monitor = "";
           text = "$TIME";
-          color = "rgb(#${base05})";
+          color = "rgb(${base05})";
           font_size = 90;
           font_family = "JetBrains Mono";
           position = "-30, 0";
@@ -78,7 +78,7 @@ in {
         {
           monitor = "";
           text = "cmd[update:43200000] date +\"%A, %d %B %Y\"";
-          color = "rgb(#${base05})";
+          color = "rgb(${base05})";
           font_size = 25;
           font_family = "JetBrains Mono";
           position = "-30, -150";
