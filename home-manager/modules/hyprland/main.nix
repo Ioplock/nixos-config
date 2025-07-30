@@ -19,6 +19,10 @@
       # "$fileManager" = "$terminal -e sh -c 'ranger'";
       "$menu" = "wofi";
 
+      exec-once = [
+        "hyprlock"
+      ];
+
       # exec-once = [
       #   "waybar"
       #   "wl-paste --type text --watch cliphist store"
@@ -29,7 +33,7 @@
         gaps_in = 0;
         gaps_out = 0;
 
-        border_size = 5;
+        border_size = 2;
 
         "col.active_border" = "rgba(d65d0eff) rgba(98971aff) 45deg";
         "col.inactive_border" = "rgba(3c3836ff)";
@@ -41,7 +45,7 @@
       };
 
       decoration = {
-        rounding = 0;
+        rounding = 5;
 
         active_opacity = 1.0;
         inactive_opacity = 1.0;
@@ -56,7 +60,7 @@
       };
 
       animations = {
-        enabled = false;
+        enabled = true;
       };
 
       input = {
