@@ -32,9 +32,9 @@
       background = [
         {
           path = "screenshot";
-          blur_passes = 1;
+          blur_passes = 2;
           blur_size = 8;
-          color = "rgba(0, 0, 0, 0.5)";
+          background_color = "rgba(0, 0, 0, 0.5)";
         }
       ];
 
@@ -50,7 +50,7 @@
           inner_color = "rgba(40, 40, 40, 1.0)";
           font_color = "rgba(235, 219, 178, 1.0)";
           fade_on_empty = false;
-          placeholder_text = "<span foreground=\"#808080\"><i>󰌾 Logged in as </i><span foreground=\"#ebdbb2\">$USER</span></span>";
+          placeholder_text = '\'<span foreground="##cad3f5">Password...</span>'\';
           hide_input = false;
           check_color = "rgba(235, 219, 178, 1.0)";
           fail_color = "rgba(204, 34, 34, 1.0)";
