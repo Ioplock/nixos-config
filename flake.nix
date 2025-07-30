@@ -25,14 +25,15 @@
     stateVersion = version;
     homeStateVersion = version;
     user = "ioplock";
+    host = "nixos-ioplock";
 		pkgs = nixpkgs.legacyPackages.${system};
 	in {
     nixosConfigurations = {
-      nixos-ioplock = libNP.nixosSystem {
+      ${host} = libNP.nixosSystem {
         inherit system;
-        modules = [ ./configuration.nix ];
+        modules = [ ./nixos/configuration.nix ];
         specialArgs = {
-          inherit inputs stateVersion user;
+          inherit inputs stateVersion user host;
         };
       };
     };
@@ -40,7 +41,7 @@
       inherit pkgs;
       modules = [ ./home-manager/home.nix ];
       extraSpecialArgs = {
-        inherit inputs homeStateVersion user;
+        inherit inputs homeStateVersion user host;
       };
     };
   };
