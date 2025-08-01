@@ -2,10 +2,19 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
-    microfetch
-    ffmpeg
-    htop
-    inxi
+    
+    # Terminal tools
+    fastfetch # System info
+    jq # JSON processor
+    yazi # File manager
+    bat # Better cat
+    tree
+    eza # Better ls
+    ffmpeg # Video&Audio processor
+
+    # Rice stuff
+    lavat # Lavalamp in terminal
+    termdown # Countdown timer & clock
 
     # WM stuff
     libnotify
@@ -14,6 +23,7 @@
 
     # Other
     bemoji
+    
   ];
 
 }

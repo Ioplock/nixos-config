@@ -7,5 +7,7 @@
     ./zsh.nix
     ./git.nix
     ./ghostty.nix
+    ./zoxide.nix
+    ./fzf.nix
   ];
 }
