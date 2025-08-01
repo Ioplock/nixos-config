@@ -1,6 +1,7 @@
 {
   imports = [
     ./hyprland
+    ./swaync
     ./waybar
     ./wofi
     ./stylix.nix

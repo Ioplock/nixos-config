@@ -10,6 +10,7 @@
     mpv # Video player
     vesktop # Discord with built-in vencord
     pavucontrol # Audio control
+    ayugram-desktop # Telegram
     
     # Utilities
     bc # Calculator
