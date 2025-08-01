@@ -10,5 +10,6 @@
     ./ghostty.nix
     ./zoxide.nix
     ./fzf.nix
+    ./qt.nix
   ];
 }
