@@ -36,7 +36,7 @@ in {
         border_size = 1;
 
         "col.active_border" = "rgb(${base07})";
-        "col.inactive_border" = "rgba(${base03})";
+        "col.inactive_border" = "rgb(${base03})";
 
         resize_on_border = true;
 
