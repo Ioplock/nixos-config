@@ -45,7 +45,7 @@
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
-    libsForQt5.xwaylandvideobridge
+    # libsForQt5.xwaylandvideobridge
 
     # Other
     bemoji
