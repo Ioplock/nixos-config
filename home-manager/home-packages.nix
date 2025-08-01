@@ -14,19 +14,21 @@
     
     # Utilities
     bc # Calculator
-    bottom # Process manager
-    htop # Process manager
-    inxi # System info
     playerctl # Media player
     cliphist # Clipboard history
     wl-clipboard # Clipboard
     brightnessctl # LCD brightness
     grimblast # Screenshots
+    hyprpicker # Color picker
     udisks # Access and manipulate disks
     ntfs3g # NTFS support
 
     # Terminal tools
     fastfetch # System info
+    bottom # Process manager
+    htop # Process manager
+    inxi # System info
+    pastel # Color tool
     jq # JSON processor
     yazi # File manager
     bat # Better cat
@@ -45,7 +47,6 @@
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
-    # libsForQt5.xwaylandvideobridge
 
     # Other
     bemoji
