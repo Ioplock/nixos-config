@@ -1,4 +1,6 @@
-{
+{config, ...}: let
+  inherit (config.lib.stylix.colors) base03 base07;
+in {
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = true;
@@ -16,28 +18,25 @@
       monitor = ",1920x1080@60,auto,1";
       "$mainMod" = "SUPER";
       "$terminal" = "ghostty --gtk-single-instance=true";
-      # "$fileManager" = "$terminal -e sh -c 'ranger'";
+      "$fileManager" = "$terminal -e sh -c 'yazi'";
       "$menu" = "wofi";
 
       exec-once = [
         "waybar"
         "hyprlock"
         "ghostty --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"
+        "wl-paste --type text --watch cliphist store"
+        "wl-paste --type image --watch cliphist store"
       ];
-
-      # exec-once = [
-      #   "wl-paste --type text --watch cliphist store"
-      #   "wl-paste --type image --watch cliphist store"
-      # ];
 
       general = {
         gaps_in = 0;
         gaps_out = 0;
 
-        border_size = 2;
+        border_size = 1;
 
-        "col.active_border" = "rgba(d65d0eff) rgba(98971aff) 45deg";
-        "col.inactive_border" = "rgba(3c3836ff)";
+        "col.active_border" = "rgb(${base07})";
+        "col.inactive_border" = "rgba(${base03})";
 
         resize_on_border = true;
 
