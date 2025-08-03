@@ -4,7 +4,6 @@
   home.packages = with pkgs; [
 
     # Desktop
-    eww
     vscode # Code editor
     code-cursor # Cursor IDE
     imv # Image viewer

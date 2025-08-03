@@ -6,7 +6,7 @@
 
   programs.eww = {
     enable = true;
-    configDir = ./eww/config;
+    configDir = ./config;
     enableBashIntegration = true;
     enableZshIntegration = true;
   };
