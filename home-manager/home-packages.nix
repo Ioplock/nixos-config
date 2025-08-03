@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
 
     # Desktop
+    eww
     vscode # Code editor
     code-cursor # Cursor IDE
     imv # Image viewer
@@ -11,7 +12,8 @@
     vesktop # Discord with built-in vencord
     pavucontrol # Audio control
     ayugram-desktop # Telegram
-    
+    firefox # Firefox    
+
     # Utilities
     bc # Calculator
     playerctl # Media player
