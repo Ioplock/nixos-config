@@ -2,7 +2,7 @@
   imports = [
     ./hyprland
     ./swaync
-    # ./waybar Removed because of new eww package
+    ./waybar
     ./wofi
     ./eww
     ./stylix.nix
