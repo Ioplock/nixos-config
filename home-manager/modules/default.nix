@@ -2,9 +2,9 @@
   imports = [
     ./hyprland
     ./swaync
-    ./waybar
+    # ./waybar Removed because of new eww package
     ./wofi
-    ./eww.nix
+    ./eww
     ./stylix.nix
     ./zsh.nix
     ./git.nix
