@@ -12,5 +12,14 @@
     NIXOS_OZONE_WL = "1";
   };
 
-  security.pam.services.hyprlock = {};
+  services.greetd = {
+    enable = true;
+    settings = rec {
+      initial_session = {
+        command = "hyprland > /dev/null 2>&1";
+        user = "ioplock";
+      };
+      default_session = initial_session;
+    };
+  };
 } 
