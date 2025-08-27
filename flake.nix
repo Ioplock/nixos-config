@@ -25,7 +25,7 @@
     stateVersion = version;
     homeStateVersion = version;
     user = "ioplock";
-    host = "nixos-ioplock";
+    host = "nix-laptop";
 		pkgs = nixpkgs.legacyPackages.${system};
 	in {
     nixosConfigurations = {
