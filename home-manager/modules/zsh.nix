@@ -11,6 +11,8 @@
 			la = "eza --icons=always -la";
 			tree = "eza --icons=always --tree";
 			term-clock = "termdown -f larry3d -z -Z '%H:%M'";
+			cd = "z";
+			cdi = "zi";
 		};
 
 		history = {
@@ -30,9 +32,9 @@
 
 		initContent = ''
 			# Start UWSM
-      if uwsm check may-start > /dev/null; then
-        exec systemd-cat -t uwsm_start uwsm start default
-      fi
-    '';
+			if uwsm check may-start > /dev/null; then
+				exec systemd-cat -t uwsm_start uwsm start default
+			fi
+		'';
 	};
 }
