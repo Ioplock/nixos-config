@@ -10,6 +10,4 @@
     isNormalUser = true;
     extraGroups = [ "wheel" "input" "networkmanager" ]; # Enable 'sudo' for the user.
   };
-
-  services.getty.autologinUser = user;
 } 
