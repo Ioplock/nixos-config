@@ -4,7 +4,6 @@
     ./swaync
     ./waybar
     ./wofi
-    ./eww
     ./stylix.nix
     ./zsh.nix
     ./git.nix
