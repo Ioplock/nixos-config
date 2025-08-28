@@ -1,5 +1,6 @@
 {
   imports = [
+    ./quickshell
     ./hyprland
     ./swaync
     ./waybar
