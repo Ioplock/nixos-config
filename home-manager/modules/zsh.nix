@@ -13,6 +13,8 @@
 			term-clock = "termdown -f larry3d -z -Z '%H:%M'";
 			cd = "z";
 			cdi = "zi";
+			nrsf = "cd ~/nixos-config && sudo nixos-rebuild switch --flake .#nix-laptop";
+			hmsf = "cd ~/nixos-config && home-manager switch --flake .";
 		};
 
 		history = {
