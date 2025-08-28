@@ -38,7 +38,7 @@
         inherit system;
         modules = [ ./nixos/configuration.nix ];
         specialArgs = {
-          inherit inputs stateVersion user host;
+          inherit inputs stateVersion user host system;
         };
       };
     };
@@ -46,7 +46,7 @@
       inherit pkgs;
       modules = [ ./home-manager/home.nix ];
       extraSpecialArgs = {
-        inherit inputs homeStateVersion user host;
+        inherit inputs homeStateVersion user host system;
       };
     };
   };

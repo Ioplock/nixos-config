@@ -1,5 +1,5 @@
 { inputs, system, ... }: {
     home.packages = [
-        inputs.quickshell.packages.${system}.default;
+        inputs.quickshell.packages.${system}.default
     ];
 }
