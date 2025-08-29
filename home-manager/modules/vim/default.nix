@@ -1,7 +1,7 @@
 { pkgs, ... }: {
 
     home.packages = with pkgs; [
-        neovim-nightly
+        neovim
     ];
 
     home.sessionVariables = {
@@ -10,7 +10,7 @@
 
     programs.neovim = {
         enable = true;
-        packages = pkgs.neovim-nightly;
+        packages = pkgs.neovim;
         vimAlias = true;
         vimdiffAlias = true;
         withNodeJs = true;
