@@ -1,19 +1,21 @@
-{ pkgs, ... }: {
+{ inputs, ... }: {
 
-    home.packages = with pkgs; [
-        neovim
+    imports = [ 
+        inputs.nixvim.homeManagerModules.nixvim
     ];
 
-    home.sessionVariables = {
-        EDITOR = "nvim";
-    };
-
-    programs.neovim = {
+    programs.nixvim = {
         enable = true;
-        packages = pkgs.neovim;
+
+        defaultEditor = true;
+        nixpkgs.useGlobalPackages = true;
+
+        colorschemes.catppuccin.enable = true;
+
+        viAlias = true;
         vimAlias = true;
-        vimdiffAlias = true;
-        withNodeJs = true;
+
+        luaLoader.enable = true;
     };
 
 }
