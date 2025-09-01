@@ -6,6 +6,10 @@
     ./options.nix
     ./theme.nix
   ];
+  
+  home.sessionVariables = {
+      EDITOR = "nvim";
+  };
 
   programs.nixvim = {
     enable = true;
