@@ -5,7 +5,7 @@
     ./swaync
     ./waybar
     ./wofi
-    ./vim
+    ./neovim
     ./stylix.nix
     ./zsh.nix
     ./git.nix
