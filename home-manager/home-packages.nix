@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
 
     # Desktop
+    parsec-bin # Remote control client (no server functions)
     vscode # Code editor
     code-cursor # Cursor IDE
     imv # Image viewer
@@ -31,7 +32,6 @@
     inxi # System info
     pastel # Color tool
     jq # JSON processor
-    yazi # File manager
     bat # Better cat
     tree
     eza # Better ls
@@ -48,6 +48,11 @@
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
+
+    # Programming
+    python311
+    uv # Package manager for python
+    nodejs_24
 
     # Other
     bemoji
