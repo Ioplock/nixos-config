@@ -19,6 +19,11 @@
       url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
@@ -36,7 +41,9 @@
     nixosConfigurations = {
       ${host} = libNP.nixosSystem {
         inherit system;
-        modules = [ ./nixos/configuration.nix ];
+        modules = [
+          ./nixos/configuration.nix
+        ];
         specialArgs = {
           inherit inputs stateVersion user host system;
         };
