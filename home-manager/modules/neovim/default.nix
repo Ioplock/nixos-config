@@ -2,6 +2,9 @@
 
   imports = [ 
     inputs.nixvim.homeManagerModules.nixvim
+    ./plugins
+    ./options.nix
+    ./theme.nix
   ];
 
   programs.nixvim = {
@@ -10,14 +13,10 @@
     defaultEditor = true;
     nixpkgs.useGlobalPackages = true;
 
-    colorschemes.catppuccin.enable = true;
-
     viAlias = true;
     vimAlias = true;
 
     luaLoader.enable = true;
-
-    opts = import ./options.nix;
   };
 
 }
