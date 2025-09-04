@@ -6,6 +6,7 @@
     ./waybar
     ./wofi
     ./neovim
+    ./spicetify.nix
     ./stylix.nix
     ./zsh.nix
     ./git.nix
