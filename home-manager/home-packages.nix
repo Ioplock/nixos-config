@@ -6,6 +6,7 @@
     # Desktop
     parsec-bin # Remote control client (no server functions)
     vscode # Code editor
+    obsidian # Notes and MD files
     code-cursor # Cursor IDE
     imv # Image viewer
     mpv # Video player
