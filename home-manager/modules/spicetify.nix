@@ -9,6 +9,8 @@ in {
   programs.spicetify = {
     enable = true;
     enabledExtensions = with spicePkgs.extensions; [
+      fullAppDisplay
+      beautifulLyrics
       adblockify
       hidePodcasts
       shuffle # shuffle+ (special characters are sanitized out of extension names)
