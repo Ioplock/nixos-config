@@ -26,6 +26,7 @@
       wofi.enable = false;
       hyprland.enable = false;
       hyprlock.enable = false;
+      spicetify.enable = false;
     };
 
     cursor = {
