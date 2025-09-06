@@ -2,6 +2,7 @@
   imports = [
     ./boot.nix
     ./networking.nix
+    ./docker.nix
     ./ssh.nix
     ./users.nix
     ./desktop.nix
