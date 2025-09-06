@@ -53,7 +53,8 @@
     # Programming
     python311
     uv # Package manager for python
-    nodejs_24
+    nodejs_24 # Javascript
+    yarn-berry # Node.js package manager
 
     # Other
     bemoji
