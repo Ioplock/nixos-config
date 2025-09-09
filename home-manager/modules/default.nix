@@ -6,6 +6,7 @@
     ./waybar
     ./wofi
     ./neovim
+    ./cmds
     ./spicetify.nix
     ./stylix.nix
     ./zsh.nix
@@ -13,7 +14,6 @@
     ./ghostty.nix
     ./zoxide.nix
     ./fzf.nix
-    ./magicf.nix
     ./yazi.nix
     ./qt.nix
   ];
