@@ -7,6 +7,7 @@
     ./wofi
     ./neovim
     ./cmds
+    ./libreoffice.nix
     ./spicetify.nix
     ./stylix.nix
     ./zsh.nix
