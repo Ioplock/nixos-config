@@ -6,13 +6,19 @@
 		syntaxHighlighting.enable = true;
 
 		shellAliases = {
+			# Aliases for office suite
+			writer = "soffice --writer";
+			calc = "soffice --calc";
+			impress = "soffice --impress";
+			# Replacing default cmds with better ones
 			ls = "eza --icons=always";
 			ll = "eza --icons=always -l";
 			la = "eza --icons=always -la";
 			tree = "eza --icons=always --tree";
-			term-clock = "termdown -f larry3d -z -Z '%H:%M'";
 			cd = "z";
 			cdi = "zi";
+			# Shortcuts
+			term-clock = "termdown -f larry3d -z -Z '%H:%M'";
 			nrsf = "cd ~/nixos-config && sudo nixos-rebuild switch --flake .#nix-laptop";
 			hmsf = "cd ~/nixos-config && home-manager switch --flake .";
 		};
