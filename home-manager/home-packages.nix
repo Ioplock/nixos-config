@@ -13,7 +13,11 @@
     vesktop # Discord with built-in vencord
     pavucontrol # Audio control
     ayugram-desktop # Telegram
-    firefox # Firefox    
+    firefox # Firefox
+    geckodriver # Driver for selenium
+    chromium # Opensource chrome browser
+    chromedriver # Driver for selenium
+
 
     # Utilities
     bc # Calculator
@@ -40,6 +44,8 @@
     silicon # Code to image
     wget # Downloader
     curl # HTTP client
+    usql # Universal cli tool for SQL databases
+    mongosh # MongoDB cli tool
 
     # Rice stuff
     lavat # Lavalamp in terminal
