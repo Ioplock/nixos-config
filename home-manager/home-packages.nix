@@ -46,6 +46,7 @@
     curl # HTTP client
     usql # Universal cli tool for SQL databases
     mongosh # MongoDB cli tool
+    opencode # AI coding agent built for the terminal
 
     # Rice stuff
     lavat # Lavalamp in terminal
