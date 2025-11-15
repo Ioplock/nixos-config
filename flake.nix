@@ -4,6 +4,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-25.05";
@@ -30,7 +31,7 @@
     };
 };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs:
   let
 		libNP = nixpkgs.lib;
 		libHM = home-manager.lib;
@@ -41,6 +42,7 @@
     user = "ioplock";
     host = "nix-laptop";
 		pkgs = nixpkgs.legacyPackages.${system};
+    unstablePkgs = nixpkgs-unstable.legacyPackages.${system};
 	in {
     nixosConfigurations = {
       ${host} = libNP.nixosSystem {
@@ -49,7 +51,7 @@
           ./nixos/configuration.nix
         ];
         specialArgs = {
-          inherit inputs stateVersion user host system;
+          inherit inputs unstablePkgs stateVersion user host system;
         };
       };
     };
