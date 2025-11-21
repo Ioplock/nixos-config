@@ -59,7 +59,7 @@
       inherit pkgs;
       modules = [ ./home-manager/home.nix ];
       extraSpecialArgs = {
-        inherit inputs homeStateVersion user host system;
+        inherit inputs unstablePkgs homeStateVersion user host system;
       };
     };
   };
