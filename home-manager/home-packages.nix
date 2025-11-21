@@ -73,6 +73,9 @@
       
       # Terminal tools
       opencode # Terminal AI agent
+
+      # Utilities
+      proxychains # Tool for forcing application traffic through proxy
     ]);
 
 }
