@@ -1,7 +1,5 @@
-{ pkgs, inputs, system, ... }: 
-let
-  unstable = inputs."nixpkgs-unstable".legacyPackages.${system};
-in {
+{ pkgs, unstablePkgs, inputs, system, ... }: {
+
   nixpkgs.config.allowUnfree = true;
 
   home.packages = 
@@ -70,11 +68,11 @@ in {
       # Other
       bemoji
     ])
-    ++ [
+    ++ (with unstablePkgs; [
       # Section for unstable version packages
-
+      
       # Terminal tools
-      unstable.opencode # AI coding agent built for the terminal
-    ];
+      opencode # Terminal AI agent
+    ]);
 
 }
