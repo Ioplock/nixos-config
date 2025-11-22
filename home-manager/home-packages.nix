@@ -20,6 +20,7 @@
       geckodriver # Driver for selenium
       chromium # Opensource chrome browser
       chromedriver # Driver for selenium
+      bruno # Open-source IDE For exploring and testing APIs
 
 
       # Utilities
