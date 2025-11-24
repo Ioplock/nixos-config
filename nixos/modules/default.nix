@@ -9,5 +9,6 @@
     ./system.nix
     ./audio.nix
     ./bluetooth.nix
+    ./proxychains.nix
   ];
 } 
