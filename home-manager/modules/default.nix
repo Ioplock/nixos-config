@@ -7,7 +7,6 @@
     ./wofi
     ./neovim
     ./cmds
-    ./v2ray
     ./libreoffice.nix
     ./spicetify.nix
     ./stylix.nix
