@@ -1,6 +1,5 @@
 {
-
-	description = "My system configuration :3";
+  description = "My system configuration :3";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
@@ -29,39 +28,39 @@
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";
     };
-};
+  };
 
   outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs:
   let
-		libNP = nixpkgs.lib;
-		libHM = home-manager.lib;
-		system = "x86_64-linux";
+    libNP = nixpkgs.lib;
+    libHM = home-manager.lib;
+    system = "x86_64-linux";
     version = "25.05";
     stateVersion = version;
     homeStateVersion = version;
     user = "ioplock";
     host = "nix-laptop";
-		pkgs = nixpkgs.legacyPackages.${system};
+    pkgs = nixpkgs.legacyPackages.${system};
     unstablePkgs = nixpkgs-unstable.legacyPackages.${system};
-	in {
-    nixosConfigurations = {
-      ${host} = libNP.nixosSystem {
-        inherit system;
-        modules = [
-          ./nixos/configuration.nix
-        ];
-        specialArgs = {
-          inherit inputs unstablePkgs stateVersion user host system;
-        };
+  in {
+    nixosConfigurations.${host} = libNP.nixosSystem {
+      inherit system;
+      modules = [
+        ./hosts/${host}/configuration.nix
+      ];
+      specialArgs = {
+        inherit inputs unstablePkgs stateVersion user host system;
       };
     };
+
     homeConfigurations.${user} = libHM.homeManagerConfiguration {
       inherit pkgs;
-      modules = [ ./home-manager/home.nix ];
+      modules = [
+        ./hosts/${host}/home.nix
+      ];
       extraSpecialArgs = {
         inherit inputs unstablePkgs homeStateVersion user host system;
       };
     };
   };
-
 }
