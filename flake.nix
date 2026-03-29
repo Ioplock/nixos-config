@@ -1,23 +1,12 @@
 {
-
-	description = "My system configuration :3";
+  description = "Dendritic NixOS configuration";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
-    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-25.05";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    stylix = {
-      url = "github:danth/stylix/release-25.05";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    quickshell = {
-      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -26,47 +15,23 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    spicetify-nix = {
-      url = "github:Gerg-L/spicetify-nix";
-    };
-
-    sops-nix = {
-      url = "github:Mic92/sops-nix";
+    stylix = {
+      url = "github:danth/stylix/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-};
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs:
-  let
-		libNP = nixpkgs.lib;
-		libHM = home-manager.lib;
-		system = "x86_64-linux";
-    version = "25.05";
-    stateVersion = version;
-    homeStateVersion = version;
-    user = "ioplock";
-    host = "nix-laptop";
-		pkgs = nixpkgs.legacyPackages.${system};
-    unstablePkgs = nixpkgs-unstable.legacyPackages.${system};
-	in {
-    nixosConfigurations = {
-      ${host} = libNP.nixosSystem {
-        inherit system;
-        modules = [
-          ./nixos/configuration.nix
-        ];
-        specialArgs = {
-          inherit inputs unstablePkgs stateVersion user host system;
-        };
-      };
+    spicetify-nix = {
+      url = "github:Gerg-L/spicetify-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
-    homeConfigurations.${user} = libHM.homeManagerConfiguration {
-      inherit pkgs;
-      modules = [ ./home-manager/home.nix ];
-      extraSpecialArgs = {
-        inherit inputs unstablePkgs homeStateVersion user host system;
-      };
-    };
+
+    flake-parts.url = "github:hercules-ci/flake-parts";
+    import-tree.url = "github:vic/import-tree";
+    wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
   };
 
+  outputs = inputs:
+    inputs.flake-parts.lib.mkFlake
+      { inherit inputs; }
+      (inputs.import-tree ./modules);
 }
