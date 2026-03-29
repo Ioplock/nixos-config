@@ -117,6 +117,8 @@ in {
             libnotify
             xdg-desktop-portal-gtk
             xdg-desktop-portal-hyprland
+            fzf
+            zoxide
             python311
             uv
             nodejs_24
