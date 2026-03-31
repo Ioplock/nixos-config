@@ -61,6 +61,7 @@ in {
         environment.systemPackages =
           (with dendriticPkgs; [
             myNvim
+            myKitty
             myGhostty
             myWaybar
             myWofi
@@ -137,6 +138,7 @@ in {
         environment.sessionVariables = {
           EDITOR = "nvim";
           SAL_USE_VCLPLUGIN = "gtk3";
+          TERMINAL = "kitty";
         };
 
         programs.git.enable = true;

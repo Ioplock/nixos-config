@@ -15,8 +15,8 @@
       monitor = ,1920x1080@60,auto,1
 
       $mainMod = SUPER
-      $terminal = ${self.packages.${pkgs.system}.myGhostty}/bin/ghostty --gtk-single-instance=true
-      $fileManager = ${self.packages.${pkgs.system}.myGhostty}/bin/ghostty --gtk-single-instance=true -e ${self.packages.${pkgs.system}.myYazi}/bin/yazi
+      $terminal = ${self.packages.${pkgs.system}.myKitty}/bin/kitty
+      $fileManager = ${self.packages.${pkgs.system}.myKitty}/bin/kitty -e ${self.packages.${pkgs.system}.myYazi}/bin/yazi
       $menu = ${self.packages.${pkgs.system}.myWofi}/bin/wofi
 
       exec-once = ${self.packages.${pkgs.system}.myWaybar}/bin/waybar
@@ -24,7 +24,6 @@
       exec-once = ${self.packages.${pkgs.system}.myHypridle}/bin/hypridle
       exec-once = ${self.packages.${pkgs.system}.mySwaync}/bin/swaync
       exec-once = ${self.packages.${pkgs.system}.myHyprlock}/bin/hyprlock || ${pkgs.hyprland}/bin/hyprctl dispatch exit
-      exec-once = ${self.packages.${pkgs.system}.myGhostty}/bin/ghostty --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false
       exec-once = ${pkgs.wl-clipboard}/bin/wl-paste --type text --watch ${pkgs.cliphist}/bin/cliphist store
       exec-once = ${pkgs.wl-clipboard}/bin/wl-paste --type image --watch ${pkgs.cliphist}/bin/cliphist store
 
