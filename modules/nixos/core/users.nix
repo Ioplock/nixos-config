@@ -32,10 +32,6 @@
         source ${pkgs.fzf}/share/fzf/key-bindings.zsh
         source ${pkgs.fzf}/share/fzf/completion.zsh
         eval "$(${pkgs.zoxide}/bin/zoxide init zsh)"
-
-        if uwsm check may-start > /dev/null 2>&1; then
-          exec systemd-cat -t uwsm_start uwsm start default
-        fi
       '';
     };
 
