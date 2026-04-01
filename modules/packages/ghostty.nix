@@ -4,7 +4,14 @@
 
     config.package = pkgs.ghostty;
 
-    config.flags."--config-file" = pkgs.writeText "ghostty-config" ''
+    config.flags."--config-default-files" = {
+      sep = "=";
+      data = "false";
+    };
+
+    config.flags."--config-file" = {
+      sep = "=";
+      data = pkgs.writeText "ghostty-config" ''
       theme = catppuccin-mocha
       cursor-style = bar
       cursor-style-blink = true
@@ -15,5 +22,6 @@
       window-save-state = never
       shell-integration = zsh
     '';
+    };
   };
 }
